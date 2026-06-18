@@ -121,9 +121,7 @@ const Program = ({ currentPage, onNavigate }) => {
           <h3 className="font-playfair text-white mb-5" style={{ fontSize: '20px' }}>Informações Importantes</h3>
           <ul className="space-y-3 font-lato" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)' }}>
             {[
-              'Não há estacionamento no local da cerimónia — utilize Uber ou Táxi',
               'Crianças menores de 3 anos não recomendadas para a festa à noite',
-              'Bebidas incluídas até às 23h30 (após esse horário serão cobradas)',
               'Partilhe os seus momentos usando #LukeneEOsvaldo',
             ].map((note, i) => (
               <li key={i} className="flex gap-3">
