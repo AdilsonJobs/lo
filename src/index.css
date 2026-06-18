@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Theme variables ── */
+:root {
+  --bg:          #0f0a06;
+  --bg-deeper:   #0a0704;
+  --card:        #241608;
+  --card-a04:    rgba(36,22,8,0.4);
+  --card-a06:    rgba(36,22,8,0.6);
+  --card-a08:    rgba(36,22,8,0.8);
+  --border:      #3a2415;
+  --border-a08:  rgba(58,36,21,0.8);
+  --glow:        rgba(201,169,110,0.05);
+}
+
+[data-theme="light"] {
+  --bg:          #2a1f14;
+  --bg-deeper:   #221a0e;
+  --card:        #3f3020;
+  --card-a04:    rgba(63,48,32,0.4);
+  --card-a06:    rgba(63,48,32,0.6);
+  --card-a08:    rgba(63,48,32,0.8);
+  --border:      #5a4530;
+  --border-a08:  rgba(90,69,48,0.8);
+  --glow:        rgba(201,169,110,0.07);
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--bg);
+  color: white;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Smooth page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0a06;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a2415;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a96e;
+}

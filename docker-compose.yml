@@ -1,0 +1,17 @@
+services:
+  wedding-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      NODE_ENV: production
+    restart: unless-stopped
+    container_name: lukene-osvaldo-wedding
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5173"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
