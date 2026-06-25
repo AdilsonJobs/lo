@@ -15,7 +15,7 @@ const events = [
 
 const infoCards = [
   { label: 'Dress Code', value: 'Social Elegante' },
-  { label: 'Chegada', value: '14h45 (antecipado)' },
+  { label: 'Chegada', value: '15h30 (antecipado)' },
 ];
 
 const Divider = () => (
