@@ -9,13 +9,13 @@ const events = [
   { time: '19:30', title: 'Jantar', description: 'Entrada e primeiro prato servidos. Bom apetite e boa conversa!', location: 'Salão de Jantar', emoji: '🍽️' },
   { time: '21:00', title: 'Primeira Dança', description: 'O momento mais aguardado — a dança dos noivos, seguida da abertura da festa.', location: 'Pista de Dança', emoji: '💃' },
   { time: '23:30', title: 'Buquê & Gravata', description: 'Tradição especial com muita alegria. Quem será o próximo?', location: 'Pista de Dança', emoji: '🎊' },
-  { time: '00:30', title: 'Surpresa Final', description: 'Encerramento mágico com fogos de artifício e uma despedida inesquecível.', location: 'Jardim Externo', emoji: '✨' },
+  { time: '05:00', title: 'Corda de Sobrevivência', description: 'Caldo & Gelados para recuperar energias e continuar a festa!', location: 'Salão Principal', emoji: '🍜' },
+  { time: '07:00', title: 'Encerramento da Festa', description: 'Uma noite inesquecível chega ao fim. Obrigado por celebrarem connosco!', location: 'Salão Principal', emoji: '🌅' },
 ];
 
 const infoCards = [
   { label: 'Dress Code', value: 'Social Elegante' },
   { label: 'Chegada', value: '14h45 (antecipado)' },
-  { label: 'RSVP', value: 'Até 30 de Junho' },
 ];
 
 const Divider = () => (
@@ -48,7 +48,7 @@ const Program = ({ currentPage, onNavigate }) => {
         </div>
 
         {/* Info cards */}
-        <div className="grid grid-cols-3 gap-3 mb-12">
+        <div className="flex justify-center gap-3 mb-12">
           {infoCards.map((card) => (
             <div
               key={card.label}
@@ -122,6 +122,7 @@ const Program = ({ currentPage, onNavigate }) => {
           <ul className="space-y-3 font-lato" style={{ fontSize: '13px', color: 'rgba(255,255,255,0.65)' }}>
             {[
               'Crianças menores de 3 anos não recomendadas para a festa à noite',
+              'Salão aberto, agasalhe-se',
               'Partilhe os seus momentos usando #LukeneEOsvaldo',
             ].map((note, i) => (
               <li key={i} className="flex gap-3">

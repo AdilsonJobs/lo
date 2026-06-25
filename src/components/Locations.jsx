@@ -136,7 +136,7 @@ const Locations = ({ currentPage, onNavigate }) => {
                 title: 'Chegando de Avião',
                 items: [
                   'Aeroporto a aproximadamente 45 minutos da cerimónia',
-                  'Uber e 99 disponíveis na saída do aeroporto',
+                  'Yango e Heetch disponíveis na saída do aeroporto',
                   'Aluguer de carro recomendado para estadias mais longas',
                   'Estacionamento no hotel: gratuito para hóspedes',
                 ],

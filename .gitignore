@@ -1,3 +1,6 @@
 # Local Netlify folder
 .netlify
 .github/workflows/deploy.yml
+
+# SSL certificates (local dev)
+ssl/
